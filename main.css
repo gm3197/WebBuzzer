@@ -5,6 +5,14 @@
   margin-bottom: 0px;
 }
 
+.instructions {
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
 hr {
   border: 0.5px solid #ccc;
 }
@@ -47,12 +55,12 @@ button.pretty {
 
 main {
   width: 320px;
-  height: 295px;
   border-radius: 3px;
   border-color: #ccc;
   border-width: 0.5px;
   border-style: solid;
   background-color: #FFF;
+  padding-bottom:10px;
 }
 body {
   display: flex;

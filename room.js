@@ -1,12 +1,20 @@
 // Initialize Firebase
-// You should add your firebase initialization data here.
+  var config = {
+    apiKey: "AIzaSyCXXkD7eV5z7mU-mM6IdEL5ELS9I-azC5c",
+    authDomain: "my-portfolio-55268.firebaseapp.com",
+    databaseURL: "https://my-portfolio-55268.firebaseio.com",
+    projectId: "my-portfolio-55268",
+    storageBucket: "my-portfolio-55268.appspot.com",
+    messagingSenderId: "897895059048"
+  };
+  firebase.initializeApp(config);
 
 var nameNumber = 0
 
 if (QueryString().id != null) {
   var room = firebase.database().ref('webBuzzer/' + QueryString().id)
   room.child('name').once('value', function(name) {
-    document.getElementById('title').innerHTML = "Web Buzzer <br> " + name.val()
+    document.getElementById('title').innerHTML = "<u>Web Buzzer</u><br> " + name.val()
   })
 
 } else {
